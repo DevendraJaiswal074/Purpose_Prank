@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine U+2661 ? </title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be Mine?</h1>
+        <div class="buttons">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+    <div class="name">
+        <h4><b>By: Dev jaiswal</b></h4>
+        <a target="_blank" href="https://www.hackerrank.com/profile/devendrajaiswal"><img src ="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/8b9fc1fa-bb42-45c6-957b-3b6611c542f1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=4088"
+            height="30" alt="Hackerrank"> </a>
+        
+        <a target="_blank" href="https://www.linkedin.com/in/devendrajaiswal074/"><img src ="https://logosmarken.com/wp-content/uploads/2020/04/Linkedin-Emblem.png"
+            height="30" alt="Linkedin"> </a>
+
+        <a target="_blank" href="https://www.instagram.com/devjaiswal_27?igsh=b2x3cDNyaWpiMXNt"><img src ="https://logos-world.net/wp-content/uploads/2020/06/Instagram-Logo.png"
+            height="30" alt="Instagram"> </a>
+
+    </div>
+    <script>
+         document.getElementById('yes').addEventListener('click', () => {
+            window.location.href = 'love.html';
+        });
+
+        const yesButton = document.getElementById('yes');
+        const noButton = document.getElementById('no');
+
+        noButton.addEventListener('mouseover', () => {
+            const yesButtonRect = yesButton.getBoundingClientRect();
+            const noButtonRect = noButton.getBoundingClientRect();
+
+            yesButton.style.position = 'absolute';
+            noButton.style.position = 'absolute';
+
+            yesButton.style.top = noButtonRect.top + 'px';
+            yesButton.style.left = noButtonRect.left + 'px';
+
+            noButton.style.top = yesButtonRect.top + 'px';
+            noButton.style.left = yesButtonRect.left + 'px';
+        });
+    </script>
+</body>
+</html>

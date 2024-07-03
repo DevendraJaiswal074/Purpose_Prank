@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('love.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+}
+h1 {
+    color: #e74c3c;
+}
+.buttons {
+    margin-top: 25px;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+yes {
+    background-color: #2ecc71;
+    color: white;
+}
+#no {
+    background-color: #e74c3c;
+    color: white;
+    /* position: absolute; */
+}
+
+.name{
+
+    text-size-adjust: auto;
+    color: white;
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
