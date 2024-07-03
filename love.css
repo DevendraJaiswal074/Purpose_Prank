@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(lovepage.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.heart-container {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.heart {
+    font-size: 100px;
+    color: red;
+}
+
+.message {
+    font-size: 60px;
+    color:white;
+    margin-top: 20px;
+}
